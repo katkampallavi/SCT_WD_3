@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quiz Game Application</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="quiz-container">
+    <h1>🧠 Quiz Game Application</h1>
+
+    <div id="quiz-box" class="quiz-box">
+      <h2 id="question">Question text</h2>
+      <ul>
+        <li><button class="option-btn" id="option1" onclick="selectOption(0)"></button></li>
+        <li><button class="option-btn" id="option2" onclick="selectOption(1)"></button></li>
+        <li><button class="option-btn" id="option3" onclick="selectOption(2)"></button></li>
+        <li><button class="option-btn" id="option4" onclick="selectOption(3)"></button></li>
+      </ul>
+      <button id="next-btn" class="next-btn" onclick="nextQuestion()">Next</button>
+    </div>
+
+    <div id="result-box" class="result-box hidden">
+      <h2>🎉 Quiz Completed!</h2>
+      <p id="score"></p>
+      <button class="restart-btn" onclick="restartQuiz()">Restart</button>
+    </div>
+  </div>
+
+  <footer>Made with ❤️ by <span>Pallavi</span></footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
